@@ -28,6 +28,6 @@ public class App {
 		
 		//xuat ket qua
 		System.out.print("Tong la = " + tong);
-	}
+	}// end of main
 
-}
+}//end of class
