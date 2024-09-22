@@ -1,0 +1,4 @@
+interface IStudentMark
+{
+    void Display();
+}
