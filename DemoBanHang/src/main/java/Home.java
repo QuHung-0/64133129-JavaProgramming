@@ -33,5 +33,7 @@ public class Home {
 				System.out.println(id + " | " + tenSP +  " | " + giaSP + " | " + moTa);
 
 			}
+			// SanPham sp1 = new SP(...)
+			//lstsp.add(sp1)
 		}
 }
