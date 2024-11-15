@@ -30,13 +30,14 @@ public class Controller
         gc.setFill(Color.WHITE);
         double[] xPoints = {150, 50, 250};
         double[] yPoints = {50, 200, 200};
+        gc.fillPolygon(xPoints, yPoints, 3);
         gc.strokePolygon(xPoints, yPoints, 3);
-
 
         gc.setStroke(Color.RED);
         double[] xInnerPoints = {150, 130, 170};
         double[] yInnerPoints = {160, 120, 120};
         gc.strokePolygon(xInnerPoints, yInnerPoints, 3);
+
 
         gc.setStroke(Color.BLACK);
         double[] xHorn1 = {115, 115, 130};
@@ -47,12 +48,19 @@ public class Controller
         gc.strokePolygon(xHorn2, yHorn2, 3);
 
 
+        gc.setStroke(Color.BLACK);
+        gc.setFill(Color.WHITE);
 
-        gc.strokeOval(110, 280, 30, 30);
-        gc.strokeOval(160, 280, 30, 30);
+
+
+        gc.fillOval(110, 260, 30, 30);
+        gc.strokeOval(110, 260, 30, 30);
+
+        gc.fillOval(160, 260, 30, 30);
+        gc.strokeOval(160, 260, 30, 30);
 
         gc.setFill(Color.RED);
-        gc.fillOval(120, 290, 10, 10);
-        gc.fillOval(170, 290, 10, 10);
+        gc.fillOval(120, 270, 10, 10);
+        gc.fillOval(170, 270, 10, 10);
     }
 }
