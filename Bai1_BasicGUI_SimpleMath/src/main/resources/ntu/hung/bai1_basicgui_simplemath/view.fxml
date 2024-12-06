@@ -8,9 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ntu.hung.bai1_basicgui_simplemath.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ntu.hung.bai1_basicgui_simplemath.Controller">
    <children>
       <AnchorPane prefHeight="707.0" prefWidth="450.0">
          <children>
@@ -51,13 +49,13 @@
                   <Font size="24.0" />
                </font>
             </RadioButton>
-            <Button fx:id="buttonCalculate" layoutX="93.0" layoutY="483.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="264.0" text="Thực hiện" style="-fx-background-color: #007BFF; -fx-text-fill: white;" />
+            <Button fx:id="buttonCalculate" layoutX="93.0" layoutY="483.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="264.0" style="-fx-background-color: #007BFF; -fx-text-fill: white;" text="Thực hiện" />
             <Text layoutX="52.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kết Quả">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <TextField fx:id="textFieldResult" layoutX="160.0" layoutY="576.0">
+            <TextField fx:id="textFieldResult" editable="false" layoutX="160.0" layoutY="576.0">
                <font>
                   <Font size="24.0" />
                </font>
