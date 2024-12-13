@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ntu.hung.bai5_simpledict.Controller">
+   <children>
+      <Separator layoutY="73.0" prefHeight="5.0" prefWidth="320.0" />
+      <Label layoutX="12.0" layoutY="14.0" text="Từ Điển Tiếng Anh">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EnglishWordsInputField" layoutX="20.0" layoutY="107.0" prefHeight="30.0" prefWidth="190.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="TranslateButton" layoutX="231.0" layoutY="109.0" mnemonicParsing="false" style="-fx-border-insets: 4;" text="Tìm">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="20.0" layoutY="175.0" text="Phiên âm">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="VietNameseOutPutField" editable="false" layoutX="20.0" layoutY="220.0" prefHeight="30.0" prefWidth="190.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="20.0" layoutY="281.0" text="Nghĩa Tiếng Việt">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="VietNameseExplainOutPutArea" editable="false" layoutX="20.0" layoutY="308.0" prefHeight="170.0" prefWidth="190.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="AddMoreWordButton" layoutX="231.0" layoutY="451.0" mnemonicParsing="false" style="-fx-border-radius: 50; -fx-background-radius: 50;" text="+" />
+   </children>
+</Pane>
