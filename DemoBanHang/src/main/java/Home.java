@@ -1,39 +1,44 @@
-import java.sql.Statement;
-import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-public class Home {
+public class Home
+{
+    public static void main(String[] args)
+    {
+        String strConn = "jdbc:mysql://localhost:3306/demobanhang";
 
-		public static void main(String[] args) throws ClassNotFoundException, SQLException
-		{
+        try
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
-			//1. Đăng kí diview
-			Class.forName("com.mysql.jdbc.Driver");
-			
-			//2. Mo ket noi
-			//2.1 chuoi ket noi
-			String strConn = "jdbc:mysql://localhost:3306/demobanhang";
-			Connection conn = DriverManager.getConnection(strConn, "root", "");
-			
-			// Select
-			String sqlSelect = "select * from SanPham";
-			Statement lenh = conn.createStatement();
-			ResultSet ketQua = lenh.executeQuery(sqlSelect);
-			
-			//Hien ket qua
-			while(ketQua.next())
-			{
-				int id = ketQua.getInt(1); //lay du lieu cot 0
-				String tenSP = ketQua.getString(2);
-				float giaSP = ketQua.getFloat(3);
-				String moTa = ketQua.getString(4);
+            try (Connection conn = DriverManager.getConnection(strConn, "root", "");
+                 Statement stmt = conn.createStatement())
+            {
 
-				System.out.println(id + " | " + tenSP +  " | " + giaSP + " | " + moTa);
+                String sqlSelect = "SELECT * FROM SanPham";
+                ResultSet rs = stmt.executeQuery(sqlSelect);
 
-			}
-			// SanPham sp1 = new SP(...)
-			//lstsp.add(sp1)
-		}
+                while (rs.next())
+                {
+                    int id = rs.getInt(1);
+                    String tenSP = rs.getString(2);
+                    float giaSP = rs.getFloat(3);
+                    String moTa = rs.getString(4);
+
+                    System.out.println(id + " | " + tenSP + " | " + giaSP + " | " + moTa);
+                }
+            }
+            catch (SQLException e)
+            {
+                e.printStackTrace();
+            }
+        }
+        catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+    }
 }

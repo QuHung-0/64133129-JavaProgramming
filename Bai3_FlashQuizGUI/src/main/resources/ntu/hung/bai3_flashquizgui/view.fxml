@@ -98,7 +98,7 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button fx:id="buttonD" layoutX="60.0" layoutY="600.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="78.0" style="-fx-background-radius: 50; -fx-background-color: #FF6847;" text="D">
+                  <Button fx:id="buttonD" layoutX="60.0" layoutY="600.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="78.0" style="-fx-background-radius: 50; -fx-background-color: #B2D3C2;" text="D">
                      <font>
                         <Font size="24.0" />
                      </font>
@@ -118,7 +118,7 @@
                         <Font size="24.0" />
                      </font>
                   </Button>
-                  <Button fx:id="optionD" layoutX="160.0" layoutY="605.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="520.0" style="-fx-border-color: #FFFFC5;" text="Phương án D">
+                  <Button fx:id="optionD" layoutX="160.0" layoutY="605.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="520.0" style="-fx-border-color: #FFFFC5; -fx-background-color: #B2D3C2;" text="Phương án D">
                      <font>
                         <Font size="24.0" />
                      </font>
